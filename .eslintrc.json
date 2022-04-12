@@ -7,14 +7,11 @@
     "plugin:import/typescript",
     "plugin:jest/recommended",
     "plugin:jest/style",
-    "plugin:prettier/recommended",
-    "plugin:react/recommended",
-    "plugin:react-hooks/recommended"
+    "plugin:prettier/recommended"
   ],
   "rules": {
     "import/first": "error",
     "import/newline-after-import": "error",
-    "import/order": ["error", { "newlines-between": "always", "alphabetize": { "order": "asc" } }],
-    "react/react-in-jsx-scope": "off"
+    "import/order": ["error", { "newlines-between": "always", "alphabetize": { "order": "asc" } }]
   }
 }
