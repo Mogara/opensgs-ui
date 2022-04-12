@@ -7,6 +7,10 @@
     "plugin:import/typescript",
     "plugin:jest/recommended",
     "plugin:jest/style",
-    "plugin:prettier/recommended"
-  ]
+    "plugin:prettier/recommended",
+    "plugin:react/recommended"
+  ],
+  "rules": {
+    "react/react-in-jsx-scope": "off"
+  }
 }
