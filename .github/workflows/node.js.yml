@@ -26,4 +26,10 @@ jobs:
     - name: Check Code Style
       run: yarn lint
     - name: Run Unit Tests
-      run: yarn jest
+      run: yarn test:ci
+    - name: Upload Coverage to Codecov
+      uses: codecov/codecov-action@v2
+      with:
+        token: ${{ secrets.CODECOV_TOKEN }}
+        files: coverage/clover.xml
+        flags: unittests
