@@ -13,6 +13,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "@nextui-org/react": "^1.0.8-beta.5",
     "next": "12.1.4",
     "react": "18.0.0",
     "react-dom": "18.0.0"
