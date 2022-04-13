@@ -10,17 +10,20 @@ on:
     branches: [ main ]
 
 jobs:
-  build:
-
+  quality-check:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
-    - name: Use Node.js ${{ matrix.node-version }}
+    - name: Checkout Code
+      uses: actions/checkout@v3
+    - name: Setup Node.js
       uses: actions/setup-node@v3
       with:
         node-version-file: .nvmrc
         cache: yarn
-    - run: yarn install
-    - run: yarn lint
-    - run: yarn test
+    - name: Install Dependencies
+      run: yarn install
+    - name: Check Code Style
+      run: yarn lint
+    - name: Run Unit Tests
+      run: yarn jest
