@@ -15,10 +15,14 @@ const Status = ({ isError, latency }: StatusProps) => {
     [styles.success]: !isError && latency < 100,
     [styles.warning]: !isError && latency >= 100 && latency < 500,
   });
-  return <div className={className}>{!isError && latency}</div>;
+  return (
+    <div className={className} data-testid="status">
+      {!isError && latency}
+    </div>
+  );
 };
 
-type ServerStatusProps = { className: string };
+type ServerStatusProps = { className?: string };
 
 const ServerStatus = ({ className }: ServerStatusProps) => {
   const { isLoading, isError, latency } = useServerStatus();
