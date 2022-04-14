@@ -17,7 +17,7 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <Link href=".">OpenSGS!</Link>
+          Welcome to <Link href="/">OpenSGS!</Link>
         </h1>
         <Button className={styles.button}>Join Game</Button>
         <ServerStatus className={styles.status} />
