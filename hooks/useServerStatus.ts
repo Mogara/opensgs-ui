@@ -1,5 +1,7 @@
 import { useCallback, useEffect, useState } from 'react';
 
+import urls from '../constants/urls';
+
 const useServerStatus = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [latency, setLatency] = useState(0);
@@ -8,7 +10,7 @@ const useServerStatus = () => {
   const fetchData = useCallback(async () => {
     const startTime = new Date();
     try {
-      await fetch('http://192.168.50.160:8080/api/health/v1alpha1/ping');
+      await fetch(urls.ping);
       const latency = new Date().getTime() - startTime.getTime();
 
       setIsError(false);
