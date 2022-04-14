@@ -3,6 +3,7 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import Link from 'next/link';
 
+import ServerStatus from '../components/ServerStatus';
 import styles from '../styles/Home.module.css';
 
 const Home: NextPage = () => {
@@ -19,6 +20,7 @@ const Home: NextPage = () => {
           Welcome to <Link href=".">OpenSGS!</Link>
         </h1>
         <Button className={styles.button}>Join Game</Button>
+        <ServerStatus className={styles.status} />
       </main>
 
       <footer className={styles.footer}>

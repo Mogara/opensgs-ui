@@ -29,6 +29,28 @@ exports[`renders homepage unchanged 1`] = `
           Join Game
         </span>
       </button>
+      <div
+        class="status"
+      >
+        <div
+          class="nextui-c-bOoPrE nextui-c-bOoPrE-iWdsRK-color-default nextui-c-bOoPrE-fQoxSm-textColor-default"
+        >
+          <span
+            aria-label="Loading"
+            class="nextui-c-chTLhx nextui-c-chTLhx-bboDzR-size-xs nextui-c-chTLhx-jJwoeB-type-default nextui-c-chTLhx-iPJLV-css nextui-loading nextui-loading-default"
+          >
+            <i
+              class="_1"
+            />
+            <i
+              class="_2"
+            />
+            <i
+              class="_3"
+            />
+          </span>
+        </div>
+      </div>
     </main>
     <footer
       class="footer"
