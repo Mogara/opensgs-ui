@@ -34,6 +34,7 @@ exports[`renders homepage unchanged 1`] = `
       >
         <div
           class="status error"
+          data-testid="status"
         />
       </div>
     </main>
