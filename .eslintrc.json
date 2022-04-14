@@ -12,6 +12,7 @@
   "rules": {
     "import/first": "error",
     "import/newline-after-import": "error",
-    "import/order": ["error", { "newlines-between": "always", "alphabetize": { "order": "asc" } }]
+    "import/order": ["error", { "newlines-between": "always", "alphabetize": { "order": "asc" } }],
+    "react-hooks/exhaustive-deps": "error"
   }
 }
