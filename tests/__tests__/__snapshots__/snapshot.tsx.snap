@@ -3,23 +3,25 @@
 exports[`renders homepage unchanged 1`] = `
 <div>
   <div
-    class="container"
+    class="py4"
   >
     <main
-      class="main"
+      class="min-h-screen pt-16 flex-1 flex flex-col justify-center items-center"
     >
       <h1
-        class="title"
+        class="text-6xl"
       >
-        Welcome to 
+        Welcome to
+         
         <a
+          class="text-blue-500 hover:underline focus:underline active:underline"
           href="/"
         >
           OpenSGS!
         </a>
       </h1>
       <button
-        class="nextui-c-kZXRhs nextui-c-PJLV nextui-c-kZXRhs-ikltse-color-default nextui-c-kZXRhs-bWGFbV-size-md nextui-c-kZXRhs-cwXrJp-borderWeight-normal nextui-c-PJLV-gulvcB-isFocusVisible-false nextui-c-kZXRhs-iPJLV-css nextui-button nextui-button--ready button"
+        class="nextui-c-kZXRhs nextui-c-PJLV nextui-c-kZXRhs-ikltse-color-default nextui-c-kZXRhs-bWGFbV-size-md nextui-c-kZXRhs-cwXrJp-borderWeight-normal nextui-c-PJLV-gulvcB-isFocusVisible-false nextui-c-kZXRhs-iPJLV-css nextui-button nextui-button--ready my-16"
         data-state="ready"
         type="button"
       >
@@ -30,18 +32,19 @@ exports[`renders homepage unchanged 1`] = `
         </span>
       </button>
       <div
-        class="status"
+        class="mt-auto self-start"
       >
         <div
-          class="status error"
+          class="h-7 w-7 rounded-full my-1 flex bg-red-500 error"
           data-testid="status"
         />
       </div>
     </main>
     <footer
-      class="footer"
+      class="flex flex-1 py-8 border-t border-neutral-200 justify-center items-center"
     >
       <a
+        class="text-inherit"
         href="https://mogara.org"
         rel="noopener noreferrer"
         target="_blank"
