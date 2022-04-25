@@ -4,27 +4,36 @@ import Head from 'next/head';
 import Link from 'next/link';
 
 import ServerStatus from '../components/ServerStatus';
-import styles from '../styles/Home.module.css';
 
 const Home: NextPage = () => {
   return (
-    <div className={styles.container}>
+    <div className="py4">
       <Head>
         <title>OpenSGS</title>
         <meta name="description" content="OpenSGS Game Entry" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <Link href="/">OpenSGS!</Link>
+      <main className="min-h-screen pt-16 flex-1 flex flex-col justify-center items-center">
+        <h1 className="text-6xl">
+          Welcome to{' '}
+          <Link href="/">
+            <a className="text-blue-500 hover:underline focus:underline active:underline">
+              OpenSGS!
+            </a>
+          </Link>
         </h1>
-        <Button className={styles.button}>Join Game</Button>
-        <ServerStatus className={styles.status} />
+        <Button className="my-16">Join Game</Button>
+        <ServerStatus className="mt-auto self-start" />
       </main>
 
-      <footer className={styles.footer}>
-        <a href="https://mogara.org" target="_blank" rel="noopener noreferrer">
+      <footer className="flex flex-1 py-8 border-t border-neutral-200 justify-center items-center">
+        <a
+          className="text-inherit"
+          href="https://mogara.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Powered by Mogara
         </a>
       </footer>
